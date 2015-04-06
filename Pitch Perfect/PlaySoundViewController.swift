@@ -17,6 +17,7 @@ class PlaySoundViewController: UIViewController {
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
         //NSBundle.mainBundle() returns path for main directory of project
         //path for resource gets path where resource is located
 //        if var filePath = NSBundle.mainBundle().pathForResource("movie_quote", ofType:"mp3")
