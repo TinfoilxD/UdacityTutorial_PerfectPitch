@@ -148,14 +148,42 @@
                                     <action selector="stopAudio:" destination="SgL-HP-qTA" eventType="touchUpInside" id="RMz-2w-hdQ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AM8-dw-Qcl">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="Chipmunk">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="29" y="301" width="155" height="100"/>
+                                </variation>
+                                <connections>
+                                    <action selector="playChipmunkAudio:" destination="SgL-HP-qTA" eventType="touchUpInside" id="aKC-d0-LNM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXQ-ef-Ep0">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="DarthVader">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="212" y="301" width="155" height="100"/>
+                                </variation>
+                                <connections>
+                                    <action selector="playDarthVaderAudio:" destination="SgL-HP-qTA" eventType="touchUpInside" id="5MU-MN-WkP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="NXQ-ef-Ep0" secondAttribute="trailing" constant="40" id="0HX-Ou-7cw"/>
                             <constraint firstItem="3Bj-CS-CSR" firstAttribute="leading" secondItem="Fn6-9f-YWo" secondAttribute="leadingMargin" constant="40" id="1t5-iX-JUg"/>
                             <constraint firstItem="3Bj-CS-CSR" firstAttribute="top" secondItem="MrQ-4o-zMj" secondAttribute="bottom" constant="100" id="6KC-zl-RlE"/>
+                            <constraint firstItem="AM8-dw-Qcl" firstAttribute="leading" secondItem="Fn6-9f-YWo" secondAttribute="leadingMargin" constant="40" id="R4e-Zi-lNE"/>
                             <constraint firstItem="BeC-My-Dy7" firstAttribute="top" secondItem="MrQ-4o-zMj" secondAttribute="bottom" constant="100" id="S7H-TH-xx6"/>
                             <constraint firstAttribute="centerX" secondItem="NSw-1N-hX7" secondAttribute="centerX" constant="-0.5" id="XS9-Qq-0ib"/>
+                            <constraint firstItem="NXQ-ef-Ep0" firstAttribute="top" secondItem="BeC-My-Dy7" secondAttribute="bottom" constant="10" id="awF-HX-qNr"/>
                             <constraint firstAttribute="trailingMargin" secondItem="BeC-My-Dy7" secondAttribute="trailing" constant="40" id="dlB-CY-9rn"/>
+                            <constraint firstItem="AM8-dw-Qcl" firstAttribute="top" secondItem="3Bj-CS-CSR" secondAttribute="bottom" constant="10" id="gv1-dh-xUE"/>
                             <constraint firstItem="McK-Xc-YFA" firstAttribute="top" secondItem="NSw-1N-hX7" secondAttribute="bottom" constant="30" id="yb6-J9-bcM"/>
                         </constraints>
                         <variation key="default">
@@ -163,14 +191,20 @@
                                 <exclude reference="3Bj-CS-CSR"/>
                                 <exclude reference="BeC-My-Dy7"/>
                                 <exclude reference="NSw-1N-hX7"/>
+                                <exclude reference="AM8-dw-Qcl"/>
+                                <exclude reference="NXQ-ef-Ep0"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="yb6-J9-bcM"/>
                                 <exclude reference="1t5-iX-JUg"/>
                                 <exclude reference="6KC-zl-RlE"/>
                                 <exclude reference="S7H-TH-xx6"/>
                                 <exclude reference="dlB-CY-9rn"/>
+                                <exclude reference="R4e-Zi-lNE"/>
+                                <exclude reference="gv1-dh-xUE"/>
+                                <exclude reference="0HX-Ou-7cw"/>
+                                <exclude reference="awF-HX-qNr"/>
                                 <exclude reference="XS9-Qq-0ib"/>
+                                <exclude reference="yb6-J9-bcM"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -178,14 +212,20 @@
                                 <include reference="3Bj-CS-CSR"/>
                                 <include reference="BeC-My-Dy7"/>
                                 <include reference="NSw-1N-hX7"/>
+                                <include reference="AM8-dw-Qcl"/>
+                                <include reference="NXQ-ef-Ep0"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="yb6-J9-bcM"/>
                                 <include reference="1t5-iX-JUg"/>
                                 <include reference="6KC-zl-RlE"/>
                                 <include reference="S7H-TH-xx6"/>
                                 <include reference="dlB-CY-9rn"/>
+                                <include reference="R4e-Zi-lNE"/>
+                                <include reference="gv1-dh-xUE"/>
+                                <include reference="0HX-Ou-7cw"/>
+                                <include reference="awF-HX-qNr"/>
                                 <include reference="XS9-Qq-0ib"/>
+                                <include reference="yb6-J9-bcM"/>
                             </mask>
                         </variation>
                     </view>
@@ -214,6 +254,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Chipmunk" width="100" height="100"/>
+        <image name="DarthVader" width="100" height="100"/>
         <image name="Microphone" width="100" height="100"/>
         <image name="Rabbit" width="100" height="100"/>
         <image name="Snail" width="100" height="100"/>
